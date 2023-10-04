@@ -1,4 +1,4 @@
-package clean.code.chapter02;
+package chapter02;
 
 public class GuessStatisticMessage {
     private String number;

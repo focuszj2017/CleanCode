@@ -1,6 +1,6 @@
-package clean.code.chapter03;
+package chapter03;
 
-import clean.code.added.*;
+import added.*;
 
 public class HtmlUnit {
     public static String testableHtml(PageData pageData, boolean includeSuiteSetup) throws Exception {

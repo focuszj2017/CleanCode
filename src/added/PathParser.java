@@ -1,4 +1,4 @@
-package clean.code.added;
+package added;
 
 public class PathParser {
     public static WikiPagePath parse(String resource) {

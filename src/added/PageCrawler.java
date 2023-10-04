@@ -1,4 +1,4 @@
-package clean.code.added;
+package added;
 
 public class PageCrawler {
     public void setDeadEndStrategy(VirtualEnabledPageCrawler virtualEnabledPageCrawler) {

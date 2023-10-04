@@ -1,9 +1,7 @@
-package clean.code.chapter14.solution;
+package chapter14.solution;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
-import static clean.code.chapter14.solution.ArgsException.ErrorCode.*;
 
 
 public class StringArgumentMarshaler implements ArgumentMarshaler {
@@ -17,7 +15,7 @@ public class StringArgumentMarshaler implements ArgumentMarshaler {
         try {
             stringValue = currentArgument.next();
         } catch (NoSuchElementException e) {
-            throw new ArgsException(MISSING_STRING);
+            throw new ArgsException(ArgsException.ErrorCode.MISSING_STRING);
         }
     }
 

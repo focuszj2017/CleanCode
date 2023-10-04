@@ -1,4 +1,4 @@
-package clean.code.chapter14.solution;
+package chapter14.solution;
 
 import java.util.Iterator;
 

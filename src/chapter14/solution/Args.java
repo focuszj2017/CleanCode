@@ -1,8 +1,6 @@
-package clean.code.chapter14.solution;
+package chapter14.solution;
 
 import java.util.*;
-
-import static clean.code.chapter14.solution.ArgsException.ErrorCode.*;
 
 public class Args {
 
@@ -35,12 +33,12 @@ public class Args {
         else if (elementTail.equals("*"))
             marshalers.put(elementId, new StringArgumentMarshaler());
         else
-            throw new ArgsException(INVALID_ARGUMENT_FORMAT, elementId, elementTail);
+            throw new ArgsException(ArgsException.ErrorCode.INVALID_ARGUMENT_FORMAT, elementId, elementTail);
     }
 
     private void validateElementId(char elementId) throws ArgsException {
         if (!Character.isLetter(elementId))
-            throw new ArgsException(INVALID_ARGUMENT_NAME, elementId, null);
+            throw new ArgsException(ArgsException.ErrorCode.INVALID_ARGUMENT_NAME, elementId, null);
     }
 
     private void parseArgumentStrings(List<String> argList) throws ArgsException {
@@ -63,7 +61,7 @@ public class Args {
     private void parseArgumentCharacter(char argChar) throws ArgsException {
         ArgumentMarshaler marshaler = marshalers.get(argChar);
         if (marshaler == null) {
-            throw new ArgsException(UNEXPECTED_ARGUMENT, argChar, null);
+            throw new ArgsException(ArgsException.ErrorCode.UNEXPECTED_ARGUMENT, argChar, null);
         } else {
             argsFound.add(argChar);
             try {

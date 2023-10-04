@@ -1,4 +1,4 @@
-package clean.code.added;
+package added;
 
 public class SuiteResponder {
     public static String SUITE_SETUP_NAME;

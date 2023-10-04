@@ -1,6 +1,6 @@
-package clean.code.chapter14.solution;
+package chapter14.solution;
 
-import static clean.code.chapter14.solution.ArgsException.ErrorCode.*;
+import static chapter14.solution.ArgsException.ErrorCode.*;
 
 public class ArgsException extends Exception {
     private ErrorCode errorCode = OK;

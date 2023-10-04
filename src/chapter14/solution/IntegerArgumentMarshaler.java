@@ -1,9 +1,9 @@
-package clean.code.chapter14.solution;
+package chapter14.solution;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import static clean.code.chapter14.solution.ArgsException.ErrorCode.*;
+import static chapter14.solution.ArgsException.ErrorCode.*;
 
 public class IntegerArgumentMarshaler implements ArgumentMarshaler {
     private int intValue = 0;

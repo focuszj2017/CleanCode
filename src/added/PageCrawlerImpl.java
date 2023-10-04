@@ -1,4 +1,4 @@
-package clean.code.added;
+package added;
 
 public class PageCrawlerImpl {
     public static WikiPage getInheritedPage(Object suite_setup_name, WikiPage wikiPage) {

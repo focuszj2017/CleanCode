@@ -1,8 +1,8 @@
-package clean.code.chapter11;
+package chapter11;
 
 // Bank.java (suppressing package names...)
 
-import clean.code.added.Account;
+import added.Account;
 
 import java.lang.reflect.*;
 import java.util.ArrayList;

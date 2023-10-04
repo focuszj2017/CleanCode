@@ -1,4 +1,4 @@
-package clean.code.added;
+package added;
 
 public class Blah {
     public PageCrawler getPageCrawler() {
