@@ -6,7 +6,6 @@ public class SetupTeardownIncluder {
     private PageData pageData;
     private WikiPage testPage;
     private StringBuffer newPageContent;
-    //    private PageCrawler pageCrawler;
     private boolean suite;
 
     public static String render(PageData pageData) throws Exception {
@@ -21,7 +20,6 @@ public class SetupTeardownIncluder {
     private SetupTeardownIncluder(PageData pageData) {
         this.pageData = pageData;
         this.testPage = pageData.getWikiPage();
-//        this.pageCrawler = testPage.getPageCrawler();
         this.newPageContent = new StringBuffer();
     }
 
